@@ -54,8 +54,8 @@ function App() {
             <button onClick={() => scrollTo('connect')}>Connect</button>
           </div>
           <a className="nav-contact" href="https://lk.linkedin.com/in/arshad-fahmy" target="_blank" rel="noreferrer">View LinkedIn <Arrow /></a>
-          <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen} aria-controls="mobile-menu">
-            <span className="sr-only">{menuOpen ? 'Close menu' : 'Open menu'}</span><MenuIcon open={menuOpen} />
+          <button className="mobile-nav-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen} aria-controls="mobile-menu">
+            {menuOpen ? 'Close' : 'Menu'}
           </button>
         </nav>
 
